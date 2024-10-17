@@ -1,26 +1,16 @@
-This is a README file for this project 
-## Title:  0x02-minimum_operations
-For this project, you will need to understand several key algorithmic and mathematical concepts to devise a solution that efficiently calculates the minimum number of operations to achieve a given number of characters using only “Copy All” and “Paste” operations. Here is a list of concepts and resources that will be helpful:
+# Min Operations
 
-Concepts Needed:
-Dynamic Programming:
+## Description
 
-Familiarity with dynamic programming can help in breaking down the problem into simpler subproblems and building up the solution.
-Dynamic Programming (GeeksforGeeks)
-Prime Factorization:
+This project contains a Python script that calculates the minimum number of operations needed to generate exactly `n` 'H' characters in a text editor, starting with a single 'H'. The allowed operations are:
+- **Copy All**: Copy all text in the editor.
+- **Paste**: Paste the copied text.
 
-Understanding how to perform prime factorization is crucial since the problem can be reduced to finding the sum of the prime factors of the target number n.
-Prime Factorization (Khan Academy)
-Code Optimization:
+The goal is to achieve exactly `n` characters using the fewest number of operations.
 
-Knowing how to approach problems from an optimization perspective can be useful in finding the most efficient solution.
-How to optimize Python code
-Greedy Algorithms:
+## Usage
 
-The problem can also be approached with greedy algorithms, choosing the best option at each step.
-Greedy Algorithms (GeeksforGeeks)
-Basic Python Programming:
+To run the script, make sure the file is executable:
 
-Proficiency in Python, including loops, conditionals, and functions, is necessary to implement the solution.
-Python Functions (Python Official Documentation)
-By studying these concepts and utilizing the resources provided, you will be equipped to tackle the “Minimum Operations” problem effectively, applying both mathematical reasoning and programming skills to find the most efficient solution.
+```bash
+chmod +x min_operations.py
