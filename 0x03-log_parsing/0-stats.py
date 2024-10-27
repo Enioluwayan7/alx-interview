@@ -22,22 +22,22 @@ def process_line(line):
         # Validate input format length and structure
         if len(parts) < 7:
             return
-        
+
         # Extract file size and status code, validate they are integers
         status_code = int(parts[-2])
         file_size = int(parts[-1])
-        
+
         # Add to total size
         total_size += file_size
-        
+
         # Update status code count if it's one we're tracking
         if status_code in status_codes_count:
             status_codes_count[status_code] += 1
-        
+
         line_count += 1
         if line_count % 10 == 0:
             print_stats()
-    
+
     except (ValueError, IndexError):
         # Ignore lines that don't match the format
         pass
