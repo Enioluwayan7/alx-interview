@@ -4,15 +4,15 @@ import signal
 
 # Initialize global variables for file size and status code counts
 total_size = 0
-status_code_count = {code: 0 for code in [200, 301, 400, 401, 403, 404, 405, 500]}
+status_codes_count = {code: 0 for code in [200, 301, 400, 401, 403, 404, 405, 500]}
 line_count = 0
 
-def print_stat():
-    """Print total file size and status code count."""
+def print_stats():
+    """Prints total file size and status code counts."""
     print(f"File size: {total_size}")
-    for code in sorted(status_code_count.keys()):
-        if status_code_count.keys[code] > 0:
-            print(f"{code}: {status_code_count[code]}")
+    for code in sorted(status_codes_count.keys()):
+        if status_codes_count[code] > 0:
+            print(f"{code}: {status_codes_count[code]}")
 
 def process_line(line):
     """Processes a single line of input."""
